@@ -1,0 +1,14 @@
+{
+  "name": "parse-github-commits",
+  "version": "1.0.0",
+  "description": "Script to parse GitHub commit messages for time, space, and folder info.",
+  "main": "parse_github_commits.js",
+  "scripts": {
+    "start": "node parse_github_commits.js"
+  },
+  "dependencies": {
+    "@octokit/rest": "^20.0.0"
+  },
+  "author": "Daniel Trimble",
+  "license": "MIT"
+}
