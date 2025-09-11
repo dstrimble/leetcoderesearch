@@ -2,7 +2,8 @@
 A collection of LeetCode questions to ace the coding interview! - Created using [LeetHub v2](https://github.com/arunbhardwaj/LeetHub-2.0)
 
 ## Main Paper & Resources
-- [Main Paper: Performance-Based Analysis of ChatGPT on Competitive Programming Challenges](./leetcode.tex)
+- [Main Paper: Performance-Based Analysis of ChatGPT on Competitive Programming Challenges (PDF)](./leetcode.pdf)
+- [Main Paper (LaTeX source)](./leetcode.tex)
 - [LeetCode Dataset (this repo)](./)
 
 ## Problems by Difficulty
