@@ -10,6 +10,8 @@
 \usepackage{newtxtext}            % Use newtxtext package
 \usepackage{newtxtt}              % Provides matching typewriter font for Times
 \usepackage{graphicx}             % For including graphics
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
 
 % --- DOCUMENT METADATA ---
 \title{A Performance-Based Analysis of ChatGPT on Competitive Programming Challenges: A Replication}
@@ -81,18 +83,64 @@ In contrast, the aggregate memory efficiency of the solutions was average, hover
 \subsection{Performance by Problem Difficulty}
 Disaggregating the results by problem difficulty uncovered a strong, inverse correlation between problem complexity and runtime performance. While still performing above average, the AI's speed advantage diminished as problems became harder. Memory performance did not show a similar clear trend.
 
+Figure~\ref{fig:scatter_difficulty_chart} provides a visualization of the raw runtime and memory percentiles for each problem, grouped by difficulty. This scatter plot highlights the spread and clustering of performance across the dataset.
+
 \begin{table}[h!]
 \centering
 \caption{Performance Percentiles by Difficulty}
 \label{tab:difficulty_performance}
-\begin{tabular}{@{}lcc@{}}
+\begin{tabular}{@{}lcccc@{}}
 \toprule
-\textbf{Difficulty} & \textbf{Avg. Runtime Percentile} & \textbf{Avg. Memory Percentile} \\ \midrule
-Easy (n=10)   & 95.34\%                   & 48.49\%                    \\
-Medium (n=10) & 68.80\%                   & 57.81\%                    \\
-Hard (n=10)   & 61.93\%                   & 54.76\%                    \\ \bottomrule
+\textbf{Difficulty} & \textbf{Avg. Runtime} & \textbf{Median Runtime} & \textbf{Avg. Memory} & \textbf{Median Memory} \\ \midrule
+Easy (n=10)   & 95.34\% & 100.00\% & 48.49\% & 54.32\% \\
+Medium (n=10) & 68.80\% & 78.42\% & 57.81\% & 56.13\% \\
+Hard (n=10)   & 61.93\% & 58.42\% & 54.76\% & 52.51\% \\ \bottomrule
 \end{tabular}
 \end{table}
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=0.9\textwidth,
+    height=0.45\textwidth,
+    xlabel={Difficulty},
+    ylabel={Percentile (\%)},
+    xtick={1,2,3},
+    xticklabels={Easy, Medium, Hard},
+    ymin=0, ymax=110,
+    legend style={at={(0.98,0.98)},anchor=north east},
+    grid=major
+]
+% Runtime Percentile (blue dots, jittered)
+\addplot[
+    color=blue,
+    only marks,
+    mark=*,
+] coordinates {
+    (1.05,100) (1.10,100) (1.15,100) (1.20,100) (1.25,40.24) (1.30,100) (1.35,100) (1.40,100) (1.45,99.04) (1.50,26) (1.55,88.09)
+    (2.05,92) (2.10,76.82) (2.15,97.79) (2.20,17.5) (2.25,52.57) (2.30,47.43) (2.35,49.85) (2.40,78.42) (2.45,89.65) (2.50,85.98)
+    (3.05,34.03) (3.10,100) (3.15,97.63) (3.20,58.42) (3.25,16.93) (3.30,20.29) (3.35,100) (3.40,59.02) (3.45,44.08) (3.50,88.91)
+};
+\addlegendentry{Runtime Percentile}
+
+% Memory Percentile (red triangles, jittered)
+\addplot[
+    color=red,
+    only marks,
+    mark=triangle*,
+] coordinates {
+    (1.05,89.89) (1.10,88.34) (1.15,30.84) (1.20,66.7) (1.25,20.62) (1.30,69.53) (1.35,73.51) (1.40,5.11) (1.45,7.09) (1.50,54.32)
+    (2.05,5.62) (2.10,26.64) (2.15,98.66) (2.20,99.89) (2.25,97.55) (2.30,39.6) (2.35,86.79) (2.40,51.48) (2.45,56.13) (2.50,15.76)
+    (3.05,23.64) (3.10,89.17) (3.15,89.3) (3.20,52.51) (3.25,20.15) (3.30,28.84) (3.35,84.5) (3.40,78.65) (3.45,22.22) (3.50,58.59)
+};
+\addlegendentry{Memory Percentile}
+
+\end{axis}
+\end{tikzpicture}
+\caption{Scatter plot of raw runtime and memory percentiles by difficulty (jittered for visibility)}
+\label{fig:scatter_difficulty_chart}
+\end{figure}
 
 \section{Discussion}
 
