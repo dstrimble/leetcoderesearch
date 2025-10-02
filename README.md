@@ -46,3 +46,18 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 
 ## Parser
 This repository includes a custom parser in the `parser/` directory. The parser is used to process GitHub commit data and extract statistics for analysis. See the scripts and data in [`parser/`](./parser/) for details on usage and implementation.
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/dstrimble/leetcoderesearch/tree/master/0004-median-of-two-sorted-arrays) |
+## Binary Search
+|  |
+| ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/dstrimble/leetcoderesearch/tree/master/0004-median-of-two-sorted-arrays) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/dstrimble/leetcoderesearch/tree/master/0004-median-of-two-sorted-arrays) |
+<!---LeetCode Topics End-->
