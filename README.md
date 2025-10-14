@@ -77,4 +77,8 @@ This repository includes a custom parser in the `parser/` directory. The parser 
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/dstrimble/leetcoderesearch/tree/master/0002-add-two-numbers) |
+## String
+|  |
+| ------- |
+| [0058-length-of-last-word](https://github.com/dstrimble/leetcoderesearch/tree/master/0058-length-of-last-word) |
 <!---LeetCode Topics End-->
