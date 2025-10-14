@@ -74,10 +74,12 @@ This repository includes a custom parser in the `parser/` directory. The parser 
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/dstrimble/leetcoderesearch/tree/master/0002-add-two-numbers) |
+| [0060-permutation-sequence](https://github.com/dstrimble/leetcoderesearch/tree/master/0060-permutation-sequence) |
 ## Recursion
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/dstrimble/leetcoderesearch/tree/master/0002-add-two-numbers) |
+| [0060-permutation-sequence](https://github.com/dstrimble/leetcoderesearch/tree/master/0060-permutation-sequence) |
 ## String
 |  |
 | ------- |
