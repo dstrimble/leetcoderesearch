@@ -25,6 +25,3 @@ function generateMatrix(n) {
     return matrix;
 }
 
-// Example usage:
-console.log(generateMatrix(3)); // [[1,2,3],[8,9,4],[7,6,5]]
-console.log(generateMatrix(1)); // [[1]]
