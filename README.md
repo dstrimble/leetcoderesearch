@@ -53,6 +53,7 @@ This repository includes a custom parser in the `parser/` directory. The parser 
 | ------- |
 | [0001-two-sum](https://github.com/dstrimble/leetcoderesearch/tree/master/0001-two-sum) |
 | [0004-median-of-two-sorted-arrays](https://github.com/dstrimble/leetcoderesearch/tree/master/0004-median-of-two-sorted-arrays) |
+| [0059-spiral-matrix-ii](https://github.com/dstrimble/leetcoderesearch/tree/master/0059-spiral-matrix-ii) |
 ## Binary Search
 |  |
 | ------- |
@@ -81,4 +82,12 @@ This repository includes a custom parser in the `parser/` directory. The parser 
 |  |
 | ------- |
 | [0058-length-of-last-word](https://github.com/dstrimble/leetcoderesearch/tree/master/0058-length-of-last-word) |
+## Matrix
+|  |
+| ------- |
+| [0059-spiral-matrix-ii](https://github.com/dstrimble/leetcoderesearch/tree/master/0059-spiral-matrix-ii) |
+## Simulation
+|  |
+| ------- |
+| [0059-spiral-matrix-ii](https://github.com/dstrimble/leetcoderesearch/tree/master/0059-spiral-matrix-ii) |
 <!---LeetCode Topics End-->
