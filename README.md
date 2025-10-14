@@ -51,6 +51,7 @@ This repository includes a custom parser in the `parser/` directory. The parser 
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/dstrimble/leetcoderesearch/tree/master/0001-two-sum) |
 | [0004-median-of-two-sorted-arrays](https://github.com/dstrimble/leetcoderesearch/tree/master/0004-median-of-two-sorted-arrays) |
 ## Binary Search
 |  |
@@ -60,4 +61,8 @@ This repository includes a custom parser in the `parser/` directory. The parser 
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/dstrimble/leetcoderesearch/tree/master/0004-median-of-two-sorted-arrays) |
+## Hash Table
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/dstrimble/leetcoderesearch/tree/master/0001-two-sum) |
 <!---LeetCode Topics End-->
