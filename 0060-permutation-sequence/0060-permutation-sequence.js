@@ -43,10 +43,7 @@ function getPermutation(n, k) {
     return result;
 }
 
-// Test cases
-console.log(getPermutation(3, 3)); // Expected: "213"
-console.log(getPermutation(4, 9)); // Expected: "2314"
-console.log(getPermutation(3, 1)); // Expected: "123"
+// Test case
 
 // Explanation of how it works for n=3, k=3:
 // Initial numbers: [1,2,3]
